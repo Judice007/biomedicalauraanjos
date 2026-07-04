@@ -42,6 +42,42 @@ function syncFloatingWhatsApp() {
   observer.observe(contactSection);
 }
 
+function setupScrollReveal() {
+  const targets = document.querySelectorAll(
+    ".signal-item, .section-heading, .section-lead, .treatment-card, .method-copy, .step, .about-media, .about-panel, .credentials > div, .testimonial-card, .location-copy, .map-placeholder, .faq-list details, .contact-copy, .contact-panel"
+  );
+
+  if (!targets.length) {
+    return;
+  }
+
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  targets.forEach((target, index) => {
+    target.classList.add("reveal-on-scroll");
+    target.style.transitionDelay = `${Math.min((index % 5) * 70, 280)}ms`;
+  });
+
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    targets.forEach((target) => target.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }
+  );
+
+  targets.forEach((target) => observer.observe(target));
+}
+
 window.addEventListener("scroll", syncHeader, { passive: true });
 
 menuToggle.addEventListener("click", () => {
@@ -60,3 +96,4 @@ nav.addEventListener("click", (event) => {
 syncHeader();
 configureWhatsApp();
 syncFloatingWhatsApp();
+setupScrollReveal();
