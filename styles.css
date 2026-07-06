@@ -191,9 +191,9 @@ a {
 .hero {
   position: relative;
   width: min(1160px, calc(100% - 48px));
-  min-height: 620px;
-  margin: 96px auto 0;
-  padding: 44px;
+  min-height: 560px;
+  margin: 84px auto 0;
+  padding: 36px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
   gap: 18px;
@@ -251,7 +251,7 @@ a {
 .hero-logo {
   width: min(240px, 58vw);
   height: auto;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .eyebrow {
@@ -276,7 +276,7 @@ p {
 
 h1 {
   max-width: 680px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   font-size: 52px;
   line-height: 1.04;
   font-weight: 850;
@@ -295,7 +295,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   min-height: 34px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   padding: 0 14px;
   border: 1px solid rgba(202, 153, 61, 0.64);
   border-radius: 999px;
@@ -373,19 +373,6 @@ h1 {
   animation-delay: 450ms;
 }
 
-.hero-feature-card-dark::after {
-  content: "";
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 14px;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--gold), var(--lilac), var(--gold));
-  background-size: 220% 100%;
-  animation: careLine 3.8s linear infinite;
-}
-
 .hero-feature-card-dark span,
 .hero-feature-card-dark strong {
   color: var(--white);
@@ -453,8 +440,8 @@ h1 {
   display: flex;
   align-items: center;
   gap: 16px;
-  min-height: 88px;
-  padding: 20px;
+  min-height: 74px;
+  padding: 16px 18px;
   background: var(--white);
 }
 
@@ -477,13 +464,13 @@ h1 {
 .section {
   width: min(1160px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 82px 0;
+  padding: 66px 0;
 }
 
 .section-intro {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.8fr);
-  gap: 48px;
+  gap: 36px;
 }
 
 .section-heading h2,
@@ -515,8 +502,8 @@ h1 {
 }
 
 .treatment-card {
-  min-height: 184px;
-  padding: 20px;
+  min-height: 166px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--white);
@@ -529,7 +516,7 @@ h1 {
   justify-content: center;
   width: 36px;
   height: 36px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   border-radius: 8px;
   color: var(--black);
   background: var(--gold-soft);
@@ -553,9 +540,9 @@ h1 {
 .method-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.8fr) minmax(320px, 1fr);
-  gap: 48px;
+  gap: 36px;
   align-items: center;
-  padding: 72px max(24px, calc((100vw - 1160px) / 2));
+  padding: 58px max(24px, calc((100vw - 1160px) / 2));
   background:
     linear-gradient(135deg, rgba(243, 229, 246, 0.96), rgba(255, 255, 255, 0.9)),
     radial-gradient(circle at 80% 20%, rgba(202, 153, 61, 0.24), transparent 35%);
@@ -575,8 +562,8 @@ h1 {
   grid-template-columns: 120px 1fr;
   gap: 16px;
   align-items: center;
-  min-height: 74px;
-  padding: 18px 20px;
+  min-height: 66px;
+  padding: 16px 18px;
   border: 1px solid rgba(190, 128, 209, 0.24);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.78);
@@ -610,8 +597,8 @@ h1 {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 430px;
-  padding: 28px;
+  min-height: 380px;
+  padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
@@ -672,7 +659,7 @@ h1 {
 }
 
 .about-panel {
-  padding: 34px;
+  padding: 30px;
   border-radius: 8px;
   background: var(--black);
   color: var(--white);
@@ -689,7 +676,7 @@ h1 {
 }
 
 .credentials div {
-  padding: 20px;
+  padding: 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--white);
@@ -718,7 +705,7 @@ h1 {
 .proof-section {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.8fr);
-  gap: 28px 48px;
+  gap: 22px 38px;
 }
 
 .proof-section .testimonial-grid {
@@ -771,9 +758,9 @@ h1 {
 .location-section {
   display: grid;
   grid-template-columns: minmax(280px, 0.84fr) minmax(320px, 1fr);
-  gap: 44px;
+  gap: 32px;
   align-items: center;
-  padding: 72px max(24px, calc((100vw - 1160px) / 2));
+  padding: 58px max(24px, calc((100vw - 1160px) / 2));
   background: var(--white);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -824,7 +811,7 @@ h1 {
 .faq-section {
   display: grid;
   grid-template-columns: minmax(0, 0.74fr) minmax(320px, 1fr);
-  gap: 48px;
+  gap: 36px;
   align-items: start;
 }
 
@@ -879,17 +866,17 @@ h1 {
 
 .contact-section {
   display: grid;
-  grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 0.9fr);
-  gap: 48px;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(320px, 0.72fr);
+  gap: 28px;
   align-items: center;
-  padding: 72px max(24px, calc((100vw - 1160px) / 2));
-  padding-bottom: 112px;
+  padding: 48px max(24px, calc((100vw - 1160px) / 2));
+  padding-bottom: 78px;
   color: var(--white);
   background: var(--black);
 }
 
 .contact-copy {
-  max-width: 520px;
+  max-width: 430px;
 }
 
 .contact-copy p {
@@ -897,7 +884,7 @@ h1 {
 }
 
 .contact-panel {
-  padding: 26px;
+  padding: 22px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.06);
@@ -907,20 +894,53 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 54px;
-  margin-bottom: 12px;
+  min-height: 50px;
+  margin-bottom: 10px;
   border-radius: 8px;
   background: var(--gold);
   color: var(--white);
   font-weight: 850;
 }
 
+.booking-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.booking-mini-grid div {
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.booking-mini-grid span,
+.booking-mini-grid strong {
+  display: block;
+}
+
+.booking-mini-grid span {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 11px;
+  font-weight: 820;
+  text-transform: uppercase;
+}
+
+.booking-mini-grid strong {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
 .instagram-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50px;
-  margin-bottom: 24px;
+  min-height: 44px;
+  margin-bottom: 12px;
   padding: 0 16px;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 8px;
@@ -931,11 +951,17 @@ h1 {
   text-align: center;
 }
 
+.contact-detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
 .contact-detail {
   display: grid;
   gap: 6px;
-  padding: 14px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0;
+  border-top: 0;
 }
 
 .contact-detail span {
@@ -947,15 +973,15 @@ h1 {
 }
 
 .contact-detail strong {
-  font-size: 19px;
+  font-size: 15px;
   line-height: 1.3;
 }
 
 .care-note {
-  margin: 18px 0 0;
+  margin: 14px 0 0;
   color: rgba(255, 255, 255, 0.62);
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .site-footer {
@@ -963,7 +989,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  padding: 28px max(24px, calc((100vw - 1160px) / 2));
+  padding: 22px max(24px, calc((100vw - 1160px) / 2));
   color: var(--muted);
   background: var(--paper);
   font-size: 14px;
@@ -1120,12 +1146,6 @@ h1 {
   }
 }
 
-@keyframes careLine {
-  to {
-    background-position: 220% 0;
-  }
-}
-
 .reveal-on-scroll {
   opacity: 0;
   translate: 0 24px;
@@ -1207,7 +1227,7 @@ h1 {
     width: min(680px, calc(100% - 32px));
     min-height: auto;
     margin-top: 88px;
-    padding: 30px;
+    padding: 24px;
     grid-template-columns: 1fr;
   }
 
@@ -1217,6 +1237,11 @@ h1 {
 
   .hero-side-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-feature-card {
+    min-height: 118px;
+    padding: 16px;
   }
 
   .signal-band,
@@ -1244,7 +1269,7 @@ h1 {
 
   .section {
     width: min(680px, calc(100% - 32px));
-    padding: 64px 0;
+    padding: 54px 0;
   }
 
   .section-intro {
@@ -1254,9 +1279,14 @@ h1 {
   .method-section,
   .location-section,
   .contact-section {
-    gap: 28px;
-    padding-top: 58px;
-    padding-bottom: 96px;
+    gap: 22px;
+    padding-top: 44px;
+    padding-bottom: 72px;
+  }
+
+  .contact-section {
+    padding-top: 40px;
+    padding-bottom: 68px;
   }
 
   .about-media {
@@ -1264,7 +1294,7 @@ h1 {
   }
 
   .photo-frame {
-    min-height: 350px;
+    min-height: 300px;
   }
 }
 
@@ -1284,8 +1314,8 @@ h1 {
   }
 
   .hero-logo {
-    width: 150px;
-    margin-bottom: 18px;
+    width: 132px;
+    margin-bottom: 12px;
   }
 
   .brand strong {
@@ -1304,8 +1334,8 @@ h1 {
 
   .hero {
     min-height: auto;
-    margin-top: 86px;
-    padding: 22px;
+    margin-top: 78px;
+    padding: 16px;
   }
 
   .hero-content {
@@ -1314,12 +1344,12 @@ h1 {
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 1.08;
   }
 
   .hero-copy {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .hero-actions {
@@ -1338,20 +1368,62 @@ h1 {
 
   .hero-side-grid {
     grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .hero-feature-card,
   .hero-feature-card-dark {
-    min-height: 0;
+    min-height: 68px;
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .hero-feature-card span {
+    font-size: 10px;
+  }
+
+  .hero-feature-card strong {
+    font-size: 14px;
+    line-height: 1.16;
+  }
+
+  .hero-feature-card p {
+    display: none;
+  }
+
+  .hero-feature-card-dark {
+    min-height: 88px;
+    padding: 14px;
+  }
+
+  .hero-feature-card-dark p {
+    display: block;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .hero-feature-card-dark a {
+    min-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
   }
 
   .signal-item {
-    min-height: 76px;
-    padding: 18px;
+    min-height: 50px;
+    gap: 10px;
+    padding: 12px 14px;
   }
 
   .signal-item:last-child {
-    padding-right: 20px;
+    padding-right: 14px;
+  }
+
+  .signal-item strong {
+    font-size: 12px;
+  }
+
+  .signal-item span {
+    font-size: 14px;
   }
 
   .section-heading h2,
@@ -1359,7 +1431,7 @@ h1 {
   .about-panel h2,
   .location-copy h2,
   .contact-copy h2 {
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.16;
   }
 
@@ -1381,12 +1453,29 @@ h1 {
 
   .treatment-card {
     min-height: 0;
-    padding: 18px;
+    padding: 16px;
+  }
+
+  .card-number {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 14px;
+  }
+
+  .treatment-card h3 {
+    font-size: 18px;
+  }
+
+  .testimonial-card,
+  .credentials div,
+  .step {
+    min-height: 0;
+    padding: 16px;
   }
 
   .photo-frame {
-    min-height: 310px;
-    padding: 24px;
+    min-height: 260px;
+    padding: 20px;
   }
 
   .photo-frame img {
@@ -1394,7 +1483,7 @@ h1 {
   }
 
   .map-placeholder {
-    min-height: 220px;
+    min-height: 190px;
   }
 
   .step {
@@ -1405,7 +1494,21 @@ h1 {
 
   .about-panel,
   .contact-panel {
-    padding: 22px;
+    padding: 18px;
+  }
+
+  .booking-mini-grid,
+  .contact-detail-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .booking-mini-grid div {
+    padding: 12px;
+  }
+
+  .instagram-link {
+    margin-bottom: 10px;
   }
 
   .faq-list summary {
