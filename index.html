@@ -7,15 +7,65 @@
       name="description"
       content="Laura Anjos, biomédica em Angra dos Reis, com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings."
     />
+    <meta name="theme-color" content="#181818" />
+    <meta name="robots" content="index, follow" />
     <title>Laura Anjos | Biomédica em Angra dos Reis</title>
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <meta property="og:type" content="business.business" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Laura Anjos | Biomédica em Angra dos Reis" />
+    <meta
+      property="og:description"
+      content="Gerenciamento cutâneo personalizado em Angra dos Reis: avaliação facial, limpeza de pele e peelings."
+    />
+    <meta property="og:image" content="assets/hero-facial-care.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Laura Anjos | Biomédica em Angra dos Reis" />
+    <meta
+      name="twitter:description"
+      content="Gerenciamento cutâneo personalizado em Angra dos Reis: avaliação facial, limpeza de pele e peelings."
+    />
+    <meta name="twitter:image" content="assets/hero-facial-care.jpg" />
+
+    <link rel="preload" as="image" href="assets/hero-facial-care.webp" imagesrcset="assets/hero-facial-care.webp" type="image/webp" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css?v=clear-hero-labels" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalBusiness",
+        "name": "Laura Anjos | Biomédica em Angra dos Reis",
+        "description": "Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.",
+        "telephone": "+5524992517752",
+        "areaServed": "Angra dos Reis - RJ",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Angra dos Reis",
+          "addressRegion": "RJ",
+          "addressCountry": "BR"
+        },
+        "sameAs": ["https://www.instagram.com/biomedicalauraanjos/"]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" data-header>
       <a class="brand" href="#inicio" aria-label="Laura Anjos Estética Avançada">
         <span class="brand-mark" aria-hidden="true">
-          <img class="brand-mark-light" src="assets/brand/laura-anjos-mark-white.png" alt="" />
-          <img class="brand-mark-dark" src="assets/brand/laura-anjos-mark-gold-black.png" alt="" />
+          <picture>
+            <source srcset="assets/brand/laura-anjos-mark-white.webp" type="image/webp" />
+            <img class="brand-mark-light" src="assets/brand/laura-anjos-mark-white.png" width="288" height="616" alt="" decoding="async" />
+          </picture>
+          <picture>
+            <source srcset="assets/brand/laura-anjos-mark-gold-black.webp" type="image/webp" />
+            <img class="brand-mark-dark" src="assets/brand/laura-anjos-mark-gold-black.png" width="288" height="616" alt="" decoding="async" />
+          </picture>
         </span>
         <span>
           <strong>Laura Anjos</strong>
@@ -42,10 +92,24 @@
 
     <main>
       <section class="hero" id="inicio" aria-label="Início">
-        <img class="hero-image" src="assets/hero-facial-care.png" alt="Atendimento profissional de limpeza de pele em uma clínica estética clara e acolhedora" />
+        <picture>
+          <source srcset="assets/hero-facial-care.webp" type="image/webp" />
+          <img
+            class="hero-image"
+            src="assets/hero-facial-care.jpg"
+            width="1762"
+            height="892"
+            alt="Atendimento profissional de limpeza de pele em uma clínica estética clara e acolhedora"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <img class="hero-logo" src="assets/brand/laura-anjos-logo-white.png" alt="Laura Anjos Estética Avançada" />
+          <picture>
+            <source srcset="assets/brand/laura-anjos-logo-white.webp" type="image/webp" />
+            <img class="hero-logo" src="assets/brand/laura-anjos-logo-white.png" width="1058" height="648" alt="Laura Anjos Estética Avançada" decoding="async" />
+          </picture>
           <p class="eyebrow">Laura Anjos | Biomédica</p>
           <h1>Gerenciamento cutâneo personalizado em Angra dos Reis.</h1>
           <p class="hero-copy">
@@ -162,7 +226,10 @@
       <section class="section about-section" id="sobre">
         <div class="about-media">
           <div class="photo-frame">
-            <img src="assets/brand/laura-anjos-mark-gold-black.png" alt="" />
+            <picture>
+              <source srcset="assets/brand/laura-anjos-mark-gold-black.webp" type="image/webp" />
+              <img src="assets/brand/laura-anjos-mark-gold-black.png" width="288" height="616" alt="" loading="lazy" decoding="async" />
+            </picture>
             <span>Espaço para foto real da Laura ou do consultório</span>
           </div>
           <div class="photo-note">
@@ -315,7 +382,10 @@
 
     <footer class="site-footer">
       <span class="footer-brand">
-        <img src="assets/brand/laura-anjos-logo-gold-black.png" alt="Laura Anjos Estética Avançada" />
+        <picture>
+          <source srcset="assets/brand/laura-anjos-logo-gold-black.webp" type="image/webp" />
+          <img src="assets/brand/laura-anjos-logo-gold-black.png" width="1058" height="648" alt="Laura Anjos Estética Avançada" loading="lazy" decoding="async" />
+        </picture>
         <span>Angra dos Reis</span>
       </span>
       <a href="#inicio">Voltar ao topo</a>
