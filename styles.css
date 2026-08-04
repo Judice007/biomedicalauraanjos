@@ -13,6 +13,8 @@
   --radius-sm: 14px;
   --radius: 20px;
   --radius-lg: 28px;
+  --gold-text: #8a5c17;
+  --lilac-text: #9850ad;
 }
 
 * {
@@ -194,12 +196,12 @@ a {
 .hero {
   position: relative;
   width: min(1160px, calc(100% - 48px));
-  min-height: 560px;
+  min-height: 420px;
   margin: 84px auto 0;
-  padding: 36px;
+  padding: 20px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
-  gap: 18px;
+  gap: 16px;
   align-items: end;
   overflow: hidden;
   color: var(--white);
@@ -252,14 +254,14 @@ a {
 }
 
 .hero-logo {
-  width: min(240px, 58vw);
+  width: min(140px, 38vw);
   height: auto;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--lilac);
+  color: var(--lilac-text);
   font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
@@ -267,7 +269,13 @@ a {
 }
 
 .hero .eyebrow {
+  margin-bottom: 8px;
   color: #ead0f1;
+}
+
+.about-panel .eyebrow,
+.contact-copy .eyebrow {
+  color: var(--lilac);
 }
 
 h1,
@@ -279,26 +287,26 @@ p {
 
 h1 {
   max-width: 680px;
-  margin-bottom: 14px;
-  font-size: 52px;
-  line-height: 1.04;
+  margin-bottom: 10px;
+  font-size: 38px;
+  line-height: 1.1;
   font-weight: 850;
   letter-spacing: 0;
 }
 
 .hero-copy {
   max-width: 610px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.88);
-  font-size: 16px;
-  line-height: 1.56;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .hero-location {
   display: inline-flex;
   align-items: center;
-  min-height: 34px;
-  margin-bottom: 18px;
+  min-height: 32px;
+  margin-bottom: 12px;
   padding: 0 14px;
   border: 1px solid rgba(202, 153, 61, 0.64);
   border-radius: 999px;
@@ -320,7 +328,7 @@ h1 {
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  gap: 8px;
   align-self: end;
   opacity: 0;
   translate: 0 22px;
@@ -328,12 +336,12 @@ h1 {
 }
 
 .hero-feature-card {
-  min-height: 150px;
+  min-height: 96px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 12px;
-  padding: 18px;
+  gap: 8px;
+  padding: 16px;
   border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: var(--radius);
   color: var(--ink);
@@ -347,7 +355,7 @@ h1 {
 }
 
 .hero-feature-card span {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 12px;
   font-weight: 900;
 }
@@ -368,7 +376,7 @@ h1 {
 .hero-feature-card-dark {
   position: relative;
   grid-column: 1 / -1;
-  min-height: 164px;
+  min-height: 100px;
   color: var(--white);
   border-color: rgba(255, 255, 255, 0.16);
   background: rgba(24, 24, 24, 0.82);
@@ -453,7 +461,7 @@ h1 {
 }
 
 .signal-item strong {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 14px;
 }
 
@@ -639,7 +647,7 @@ h1 {
 }
 
 .photo-note strong {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -680,7 +688,7 @@ h1 {
 
 .credentials strong {
   margin-bottom: 8px;
-  color: var(--lilac);
+  color: var(--lilac-text);
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0;
@@ -735,7 +743,7 @@ h1 {
 }
 
 .testimonial-card strong {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 14px;
 }
 
@@ -835,7 +843,7 @@ h1 {
 
 .faq-list summary::after {
   content: "+";
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 24px;
   line-height: 1;
 }
@@ -1208,7 +1216,7 @@ h1 {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .hero {
