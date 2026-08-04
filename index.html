@@ -39,18 +39,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
-        "name": "Laura Anjos | Biomédica em Angra dos Reis",
-        "description": "Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.",
-        "telephone": "+5524992517752",
-        "areaServed": "Angra dos Reis - RJ",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Angra dos Reis",
-          "addressRegion": "RJ",
-          "addressCountry": "BR"
-        },
-        "sameAs": ["https://www.instagram.com/biomedicalauraanjos/"]
+        "@graph": [
+          {
+            "@type": "MedicalBusiness",
+            "name": "Laura Anjos | Espaço dos Anjos",
+            "description": "Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.",
+            "telephone": "+5524992517752",
+            "areaServed": "Angra dos Reis - RJ",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Av. Júlio Maria, 52, sala 101 - Centro",
+              "addressLocality": "Angra dos Reis",
+              "addressRegion": "RJ",
+              "postalCode": "23900-502",
+              "addressCountry": "BR"
+            },
+            "sameAs": ["https://www.instagram.com/biomedicalauraanjos/"]
+          },
+          {
+            "@type": "MedicalBusiness",
+            "name": "Laura Anjos | Jô Estúdio de Beleza",
+            "description": "Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.",
+            "telephone": "+5524992517752",
+            "areaServed": "Angra dos Reis - RJ",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Av. Vereador Benedito Adelino, 390 - Encruzo da Enseada",
+              "addressLocality": "Angra dos Reis",
+              "addressRegion": "RJ",
+              "postalCode": "23931-400",
+              "addressCountry": "BR"
+            },
+            "sameAs": ["https://www.instagram.com/biomedicalauraanjos/"]
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -350,15 +372,21 @@
           <p class="eyebrow">Localização</p>
           <h2>Atendimento presencial em Angra dos Reis.</h2>
           <p>
-            Atendimento exclusivo em Angra dos Reis - RJ. Endereço e horários são enviados pelo WhatsApp.
+            Atendimento presencial em dois espaços parceiros em Angra dos Reis - RJ, sempre com horário marcado.
           </p>
           <a class="button button-primary" data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis.">
             Chamar no WhatsApp
           </a>
         </div>
-        <div class="map-placeholder">
-          <strong>Angra dos Reis - RJ</strong>
-          <span>Endereço completo e ponto de referência são enviados após o primeiro contato pelo WhatsApp.</span>
+        <div class="location-cards" aria-label="Endereços de atendimento">
+          <div class="location-card">
+            <strong>Espaço dos Anjos</strong>
+            <span>Av. Júlio Maria, 52, sala 101 - Centro (ao lado do restaurante La Bambina), Angra dos Reis - RJ, 23900-502</span>
+          </div>
+          <div class="location-card">
+            <strong>Jô Estúdio de Beleza</strong>
+            <span>Av. Vereador Benedito Adelino, 390 - Encruzo da Enseada, Angra dos Reis - RJ, 23931-400</span>
+          </div>
         </div>
       </section>
 
