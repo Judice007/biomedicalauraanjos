@@ -424,45 +424,6 @@ h1 {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.signal-band {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  width: min(1160px, calc(100% - 48px));
-  margin: 16px auto 0;
-  position: relative;
-  z-index: 5;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-
-.signal-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  min-height: 74px;
-  padding: 16px 18px;
-  background: var(--white);
-}
-
-.signal-item:last-child {
-  padding-right: 96px;
-}
-
-.signal-item strong {
-  color: var(--gold-text);
-  font-size: 14px;
-}
-
-.signal-item span {
-  color: var(--ink);
-  font-size: 15px;
-  font-weight: 760;
-  line-height: 1.35;
-}
-
 .section {
   width: min(1160px, calc(100% - 48px));
   margin: 0 auto;
@@ -1230,7 +1191,6 @@ h1 {
     padding: 16px;
   }
 
-  .signal-band,
   .section-intro,
   .method-section,
   .about-section,
@@ -1239,10 +1199,6 @@ h1 {
   .faq-section,
   .contact-section {
     grid-template-columns: 1fr;
-  }
-
-  .signal-band {
-    width: min(680px, calc(100% - 32px));
   }
 
   .treatment-grid {
@@ -1349,11 +1305,6 @@ h1 {
     width: 100%;
   }
 
-  .signal-band {
-    grid-template-columns: 1fr;
-    margin-top: 14px;
-  }
-
   .hero-side-grid {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -1394,24 +1345,6 @@ h1 {
     min-height: 30px;
     padding: 0 10px;
     font-size: 12px;
-  }
-
-  .signal-item {
-    min-height: 50px;
-    gap: 10px;
-    padding: 12px 14px;
-  }
-
-  .signal-item:last-child {
-    padding-right: 14px;
-  }
-
-  .signal-item strong {
-    font-size: 12px;
-  }
-
-  .signal-item span {
-    font-size: 14px;
   }
 
   .section-heading h2,
