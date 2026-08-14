@@ -1303,17 +1303,16 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .hero::before {
-    right: -20%;
-    top: 36%;
-    width: 120%;
-    height: 58%;
+  .hero::before,
+  .hero::after {
+    display: none;
   }
 
   .hero-photo {
     grid-column: 1;
     grid-row: 1;
-    min-height: 224px;
+    min-height: 240px;
+    border-radius: 28px;
     transform: none;
   }
 
@@ -1323,6 +1322,10 @@ h1 {
     max-width: none;
     margin: -28px 0 0;
     border-radius: 28px;
+  }
+
+  .hero-content::after {
+    display: none;
   }
 
   .hero-side-grid {
@@ -1433,8 +1436,8 @@ h1 {
   }
 
   .hero-photo {
-    min-height: 176px;
-    border-radius: 34% 66% 46% 54% / 38% 34% 66% 62%;
+    min-height: 200px;
+    border-radius: 24px;
   }
 
   .photo-frame {
