@@ -1,20 +1,19 @@
 :root {
-  --ink: #241a15;
-  --muted: #6b5c4f;
-  --line: #e3d3bd;
-  --paper: #f8f1e6;
-  --paper-deep: #efe0c8;
-  --white: #fffaf3;
+  --ink: #181818;
+  --ink-soft: #242020;
+  --muted: #6b6258;
+  --line: #e6ddd0;
+  --paper: #faf7f2;
+  --paper-deep: #f1ebe0;
+  --white: #ffffff;
 
-  --terracotta: #b2502f;
-  --terracotta-dark: #8f3d22;
-  --wine: #3d1810;
-  --wine-soft: #4c2015;
-  --gold: #c79a4b;
-  --gold-soft: #e9d3a4;
-  --gold-text: #8a642b;
+  --rosa: #be80d1;
+  --rosa-deep: #7a3d8f;
+  --gold: #ca993d;
+  --gold-soft: #e3c383;
+  --gold-text: #8a5c17;
 
-  --shadow: 0 20px 50px rgba(30, 16, 8, 0.16);
+  --shadow: 0 20px 50px rgba(20, 12, 24, 0.16);
   --radius-sm: 10px;
   --radius: 16px;
   --radius-lg: 22px;
@@ -112,8 +111,8 @@ h3 {
 .site-header.is-scrolled,
 .site-header.is-open {
   color: var(--ink);
-  background: rgba(248, 241, 230, 0.92);
-  box-shadow: 0 10px 30px rgba(30, 16, 8, 0.08);
+  background: rgba(250, 247, 242, 0.92);
+  box-shadow: 0 10px 30px rgba(20, 12, 24, 0.08);
   backdrop-filter: blur(14px);
 }
 
@@ -231,8 +230,8 @@ h3 {
 .site-header.is-scrolled .site-nav .nav-cta,
 .site-header.is-open .site-nav .nav-cta {
   color: var(--white);
-  border-color: var(--terracotta);
-  background: var(--terracotta);
+  border-color: var(--rosa-deep);
+  background: var(--rosa-deep);
 }
 
 .menu-toggle {
@@ -264,12 +263,12 @@ h3 {
 .site-header.is-scrolled .menu-toggle,
 .site-header.is-open .menu-toggle {
   color: var(--ink);
-  border-color: rgba(178, 80, 47, 0.4);
-  background: rgba(178, 80, 47, 0.08);
+  border-color: rgba(122, 61, 143, 0.35);
+  background: rgba(122, 61, 143, 0.08);
 }
 
 .site-header.is-open .menu-toggle span {
-  background: var(--terracotta);
+  background: var(--rosa-deep);
 }
 
 /* ---------- Eyebrow / shared text ---------- */
@@ -279,7 +278,7 @@ h3 {
   align-items: center;
   gap: 10px;
   margin: 0 0 16px;
-  color: var(--terracotta);
+  color: var(--rosa-deep);
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -294,8 +293,10 @@ h3 {
 }
 
 .hero .eyebrow,
+.method-copy .eyebrow,
+.location-copy .eyebrow,
 .contact-copy .eyebrow {
-  color: var(--gold-soft);
+  color: var(--rosa);
 }
 
 /* ---------- Hero ---------- */
@@ -304,7 +305,7 @@ h3 {
   position: relative;
   overflow: hidden;
   color: var(--white);
-  background: var(--wine);
+  background: var(--ink);
 }
 
 .hero::before {
@@ -312,8 +313,8 @@ h3 {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 50% at 88% 6%, rgba(199, 154, 75, 0.22), transparent 60%),
-    radial-gradient(ellipse 50% 40% at 4% 96%, rgba(178, 80, 47, 0.3), transparent 65%);
+    radial-gradient(ellipse 60% 50% at 88% 6%, rgba(190, 128, 209, 0.24), transparent 60%),
+    radial-gradient(ellipse 50% 40% at 4% 96%, rgba(202, 153, 61, 0.2), transparent 65%);
   pointer-events: none;
 }
 
@@ -338,7 +339,7 @@ h3 {
 .hero-copy {
   max-width: 420px;
   margin-bottom: 30px;
-  color: rgba(255, 250, 243, 0.78);
+  color: rgba(255, 255, 255, 0.76);
   font-size: 16px;
   line-height: 1.62;
 }
@@ -363,12 +364,12 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   padding-top: 28px;
-  border-top: 1px solid rgba(255, 250, 243, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .hero-stats dt {
   margin-bottom: 6px;
-  color: var(--gold-soft);
+  color: var(--rosa);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -397,7 +398,7 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  border: 1px solid rgba(255, 250, 243, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: inherit;
   pointer-events: none;
 }
@@ -418,7 +419,7 @@ h1 {
   width: min(1160px, calc(100% - 48px));
   margin: 0 auto;
   padding-bottom: 28px;
-  color: rgba(255, 250, 243, 0.56);
+  color: rgba(255, 255, 255, 0.52);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -446,7 +447,7 @@ h1 {
 .button-primary {
   border: 1px solid var(--gold);
   background: var(--gold);
-  color: var(--wine);
+  color: var(--ink);
 }
 
 .button-primary:hover {
@@ -455,14 +456,14 @@ h1 {
 }
 
 .button-secondary {
-  border: 1px solid rgba(255, 250, 243, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   color: var(--white);
   background: transparent;
 }
 
 .button-secondary:hover {
   border-color: var(--white);
-  background: rgba(255, 250, 243, 0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* ---------- Sections shared ---------- */
@@ -533,7 +534,7 @@ h1 {
 .card-number {
   display: block;
   margin-bottom: 34px;
-  color: var(--gold-text);
+  color: var(--rosa-deep);
   font-family: var(--font-display);
   font-style: italic;
   font-size: 15px;
@@ -562,7 +563,7 @@ h1 {
   align-items: center;
   padding: 96px max(24px, calc((100vw - 1160px) / 2));
   color: var(--white);
-  background: var(--wine);
+  background: var(--ink);
   overflow: hidden;
 }
 
@@ -570,7 +571,7 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 70% at 100% 0%, rgba(178, 80, 47, 0.32), transparent 60%);
+  background: radial-gradient(ellipse 60% 70% at 100% 0%, rgba(190, 128, 209, 0.26), transparent 60%);
   pointer-events: none;
 }
 
@@ -585,7 +586,7 @@ h1 {
 }
 
 .method-copy p {
-  color: rgba(255, 250, 243, 0.72);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .method-steps {
@@ -601,22 +602,22 @@ h1 {
   gap: 20px;
   align-items: baseline;
   padding: 22px 0;
-  border-bottom: 1px solid rgba(255, 250, 243, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .step:first-child {
-  border-top: 1px solid rgba(255, 250, 243, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .step strong {
   font-family: var(--font-display);
   font-style: italic;
-  color: var(--gold-soft);
+  color: var(--rosa);
   font-size: 20px;
 }
 
 .step span {
-  color: rgba(255, 250, 243, 0.78);
+  color: rgba(255, 255, 255, 0.76);
   line-height: 1.55;
 }
 
@@ -660,7 +661,7 @@ h1 {
   z-index: 2;
   padding: 14px 18px;
   color: var(--white);
-  background: rgba(61, 24, 16, 0.72);
+  background: rgba(24, 24, 24, 0.74);
   backdrop-filter: blur(10px);
 }
 
@@ -672,13 +673,13 @@ h1 {
 .photo-note strong {
   font-family: var(--font-display);
   font-style: italic;
-  color: var(--gold-soft);
+  color: var(--rosa);
   font-size: 15px;
 }
 
 .photo-note span {
   margin-top: 2px;
-  color: rgba(255, 250, 243, 0.8);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 12px;
 }
 
@@ -719,7 +720,7 @@ h1 {
 .credentials strong {
   display: block;
   margin-bottom: 8px;
-  color: var(--terracotta);
+  color: var(--rosa-deep);
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -789,7 +790,7 @@ h1 {
 }
 
 .testimonial-card strong {
-  color: var(--terracotta);
+  color: var(--rosa-deep);
   font-size: 13px;
   font-weight: 700;
 }
@@ -809,7 +810,7 @@ h1 {
   align-items: center;
   padding: 96px max(24px, calc((100vw - 1160px) / 2));
   color: var(--white);
-  background: var(--wine);
+  background: var(--ink);
 }
 
 .location-copy {
@@ -821,7 +822,7 @@ h1 {
 }
 
 .location-copy p {
-  color: rgba(255, 250, 243, 0.72);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .location-copy .button {
@@ -832,13 +833,13 @@ h1 {
 .location-cards {
   display: grid;
   gap: 1px;
-  background: rgba(255, 250, 243, 0.16);
-  border: 1px solid rgba(255, 250, 243, 0.16);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .location-card {
   padding: 24px 26px;
-  background: var(--wine-soft);
+  background: var(--ink-soft);
 }
 
 .location-card strong,
@@ -850,12 +851,12 @@ h1 {
   margin-bottom: 8px;
   font-family: var(--font-display);
   font-style: italic;
-  color: var(--gold-soft);
+  color: var(--rosa);
   font-size: 19px;
 }
 
 .location-card span {
-  color: rgba(255, 250, 243, 0.72);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   line-height: 1.55;
 }
@@ -902,7 +903,7 @@ h1 {
 .faq-list summary::after {
   content: "+";
   flex-shrink: 0;
-  color: var(--terracotta);
+  color: var(--rosa-deep);
   font-size: 24px;
   line-height: 1;
   transition: transform 220ms ease;
@@ -944,13 +945,13 @@ h1 {
 }
 
 .contact-copy p {
-  color: rgba(255, 250, 243, 0.68);
+  color: rgba(255, 255, 255, 0.66);
 }
 
 .contact-panel {
   padding: 30px;
-  border: 1px solid rgba(255, 250, 243, 0.14);
-  background: rgba(255, 250, 243, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .contact-link {
@@ -961,7 +962,7 @@ h1 {
   margin-bottom: 12px;
   border-radius: 999px;
   background: var(--gold);
-  color: var(--wine);
+  color: var(--ink);
   font-weight: 700;
   transition: background 200ms ease, transform 200ms ease;
 }
@@ -976,7 +977,7 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1px;
   margin-bottom: 12px;
-  background: rgba(255, 250, 243, 0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .booking-mini-grid div {
@@ -991,7 +992,7 @@ h1 {
 
 .booking-mini-grid span {
   margin-bottom: 6px;
-  color: rgba(255, 250, 243, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1011,7 +1012,7 @@ h1 {
   min-height: 46px;
   margin-bottom: 14px;
   padding: 0 16px;
-  border: 1px solid rgba(255, 250, 243, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   color: var(--white);
   font-size: 13px;
@@ -1021,8 +1022,8 @@ h1 {
 }
 
 .instagram-link:hover {
-  border-color: rgba(255, 250, 243, 0.5);
-  background: rgba(255, 250, 243, 0.06);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .contact-detail-list {
@@ -1037,7 +1038,7 @@ h1 {
 }
 
 .contact-detail span {
-  color: rgba(255, 250, 243, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1052,7 +1053,7 @@ h1 {
 
 .care-note {
   margin: 18px 0 0;
-  color: rgba(255, 250, 243, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   line-height: 1.5;
 }
@@ -1285,8 +1286,8 @@ h1 {
     margin-top: 6px;
     min-height: 48px;
     color: var(--white);
-    border-color: var(--terracotta);
-    background: var(--terracotta);
+    border-color: var(--rosa-deep);
+    background: var(--rosa-deep);
   }
 
   h1 {
