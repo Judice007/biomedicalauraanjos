@@ -44,7 +44,7 @@ function syncFloatingWhatsApp() {
 
 function setupScrollReveal() {
   const targets = document.querySelectorAll(
-    ".signal-item, .section-heading, .section-lead, .treatment-card, .method-copy, .step, .about-media, .about-panel, .credentials > div, .testimonial-card, .location-copy, .map-placeholder, .faq-list details, .contact-copy, .contact-panel"
+    ".signal-item, .section-heading, .section-lead, .treatment-card, .method-copy, .step, .about-media, .about-panel, .credentials > div, .testimonial-card, .location-copy, .location-media, .map-placeholder, .faq-list details, .why-media, .why-copy, .contact-copy, .contact-panel"
   );
 
   if (!targets.length) {

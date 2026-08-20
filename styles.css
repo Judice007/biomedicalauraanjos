@@ -1138,6 +1138,113 @@ h1 {
   line-height: 1.6;
 }
 
+/* ---------- Why / differentiators ---------- */
+
+.why-section {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(320px, 1fr);
+  gap: 40px 56px;
+  align-items: center;
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.why-media {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 6px 90px 6px 6px;
+  box-shadow: var(--shadow);
+}
+
+.why-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.why-copy {
+  max-width: 520px;
+}
+
+.why-copy h2 {
+  margin-bottom: 16px;
+}
+
+.why-copy > p {
+  margin-bottom: 28px;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  margin: 0 0 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.why-list li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.why-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+}
+
+.why-list li::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 11px;
+  width: 6px;
+  height: 3px;
+  border-left: 2px solid var(--gold-text);
+  border-bottom: 2px solid var(--gold-text);
+  transform: rotate(-45deg);
+}
+
+.why-quotes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.why-quotes blockquote {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--paper-deep);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 13px;
+}
+
+.why-quotes cite {
+  margin-left: 8px;
+  color: var(--rosa-deep);
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+}
+
 /* ---------- Contact ---------- */
 
 .contact-section {
@@ -1562,8 +1669,19 @@ h1 {
   .about-section,
   .location-section,
   .faq-section,
+  .why-section,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .why-section {
+    width: min(680px, calc(100% - 32px));
+    padding: 72px 0;
+    gap: 28px;
+  }
+
+  .why-media {
+    aspect-ratio: 4 / 3;
   }
 
   .testimonial-grid {
@@ -1725,6 +1843,10 @@ h1 {
     border-right: 0;
     border-bottom: 1px solid var(--line);
     padding: 16px 0;
+  }
+
+  .why-list {
+    grid-template-columns: 1fr;
   }
 
   .credentials div:last-child {
