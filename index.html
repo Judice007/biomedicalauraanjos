@@ -7,7 +7,7 @@
       name="description"
       content="Laura Anjos, biomédica em Angra dos Reis, com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings."
     />
-    <meta name="theme-color" content="#181818" />
+    <meta name="theme-color" content="#3d1810" />
     <meta name="robots" content="index, follow" />
     <title>Laura Anjos | Biomédica em Angra dos Reis</title>
 
@@ -34,7 +34,9 @@
     <meta name="twitter:image" content="assets/hero-facial-care.jpg" />
 
     <link rel="preload" as="image" href="assets/hero-facial-care.webp" imagesrcset="assets/hero-facial-care.webp" type="image/webp" fetchpriority="high" />
-    <link rel="stylesheet" href="styles.css?v=organic-soft-forms-2" />
+    <link rel="preload" as="font" href="assets/fonts/fraunces-400.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="font" href="assets/fonts/inter-400.woff2" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=editorial-terracota-1" />
 
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalBusiness","name":"Laura Anjos | Espaço dos Anjos","description":"Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.","telephone":"+5524992517752","areaServed":"Angra dos Reis - RJ","address":{"@type":"PostalAddress","streetAddress":"Av. Júlio Maria, 52, sala 101 - Centro","addressLocality":"Angra dos Reis","addressRegion":"RJ","postalCode":"23900-502","addressCountry":"BR"},"sameAs":["https://www.instagram.com/biomedicalauraanjos/"]},{"@type":"MedicalBusiness","name":"Laura Anjos | Jô Estúdio de Beleza","description":"Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.","telephone":"+5524992517752","areaServed":"Angra dos Reis - RJ","address":{"@type":"PostalAddress","streetAddress":"Av. Vereador Benedito Adelino, 390 - Encruzo da Enseada","addressLocality":"Angra dos Reis","addressRegion":"RJ","postalCode":"23931-400","addressCountry":"BR"},"sameAs":["https://www.instagram.com/biomedicalauraanjos/"]}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como sei qual tratamento é ideal para minha pele?","acceptedAnswer":{"@type":"Answer","text":"O primeiro passo é a avaliação facial. Depois dela, Laura indica o protocolo mais adequado."}},{"@type":"Question","name":"A limpeza de pele dói?","acceptedAnswer":{"@type":"Answer","text":"Pode haver leve desconforto na extração, sempre respeitando a sensibilidade da pele."}},{"@type":"Question","name":"Quanto tempo dura o atendimento?","acceptedAnswer":{"@type":"Answer","text":"Varia conforme o protocolo indicado na avaliação. Laura informa o tempo estimado antes de iniciar a sessão."}}]}</script>
@@ -77,39 +79,6 @@
 
     <main>
       <section class="hero" id="inicio" aria-label="Início">
-        <div class="hero-content">
-          <picture>
-            <source srcset="assets/brand/laura-anjos-logo-gold-black.webp" type="image/webp" />
-            <img class="hero-logo" src="assets/brand/laura-anjos-logo-gold-black.png" width="1058" height="648" alt="Laura Anjos Estética Avançada" decoding="async" />
-          </picture>
-          <p class="eyebrow">Laura Anjos | Biomédica</p>
-          <h1>Cuidado de pele personalizado em Angra dos Reis.</h1>
-          <p class="hero-copy">
-            Limpeza de pele, avaliação facial e peelings para textura, luminosidade e equilíbrio da pele.
-          </p>
-          <p class="hero-location">Atendimento exclusivo em Angra dos Reis - RJ</p>
-          <div class="hero-actions">
-            <a class="button button-primary" data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis." target="_blank" rel="noopener">Agendar avaliação</a>
-            <a class="button button-secondary" href="#tratamentos">Ver tratamentos</a>
-          </div>
-          <div class="hero-side-grid" aria-label="Destaques do atendimento">
-            <article class="hero-feature-card">
-              <span>Protocolo</span>
-              <strong>Avaliação individual</strong>
-              <p>O cuidado começa entendendo a pele.</p>
-            </article>
-            <article class="hero-feature-card">
-              <span>Local</span>
-              <strong>Angra dos Reis</strong>
-              <p>Atendimento presencial e personalizado.</p>
-            </article>
-            <article class="hero-feature-card hero-feature-card-dark">
-              <span>Rotina</span>
-              <strong>Rotina orientada em casa</strong>
-              <p>Passos claros para manter o cuidado depois da sessão.</p>
-            </article>
-          </div>
-        </div>
         <div class="hero-photo">
           <picture>
             <source srcset="assets/hero-facial-care.webp" type="image/webp" />
@@ -123,7 +92,41 @@
               decoding="async"
             />
           </picture>
+          <span class="hero-badge" aria-hidden="true">
+            <picture>
+              <source srcset="assets/brand/laura-anjos-mark-white-square.webp" type="image/webp" />
+              <img src="assets/brand/laura-anjos-mark-white-square.png" width="616" height="616" alt="" decoding="async" />
+            </picture>
+          </span>
         </div>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Laura Anjos · Biomédica</p>
+            <h1>Cuidado de pele personalizado em Angra dos Reis.</h1>
+            <p class="hero-copy">
+              Limpeza de pele, avaliação facial e peelings para textura, luminosidade e equilíbrio da pele.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis." target="_blank" rel="noopener">Agendar avaliação</a>
+              <a class="button button-secondary" href="#tratamentos">Ver tratamentos</a>
+            </div>
+            <dl class="hero-stats" aria-label="Destaques do atendimento">
+              <div>
+                <dt>Protocolo</dt>
+                <dd>Avaliação individual</dd>
+              </div>
+              <div>
+                <dt>Local</dt>
+                <dd>Angra dos Reis</dd>
+              </div>
+              <div>
+                <dt>Rotina</dt>
+                <dd>Orientada em casa</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <p class="hero-location">Atendimento exclusivo em Angra dos Reis - RJ</p>
       </section>
 
       <section class="section section-intro" id="tratamentos">
@@ -135,36 +138,86 @@
           Protocolos definidos após avaliação, com foco na necessidade real da pele e na rotina de cada paciente.
         </p>
 
-        <div class="treatment-grid">
+        <div class="feature-photos">
+          <figure class="feature-photo">
+            <picture>
+              <source srcset="assets/hero-facial-care.webp" type="image/webp" />
+              <img src="assets/hero-facial-care.jpg" width="1400" height="709" alt="Laura Anjos durante atendimento estético" loading="lazy" decoding="async" />
+            </picture>
+            <span class="feature-badge">Avaliação individual</span>
+          </figure>
+          <figure class="feature-photo">
+            <picture>
+              <source srcset="assets/laura-atendimento.webp" type="image/webp" />
+              <img src="assets/laura-atendimento.jpg" width="1000" height="1333" alt="Laura Anjos realizando limpeza de pele" loading="lazy" decoding="async" />
+            </picture>
+            <span class="feature-badge">Atendimento presencial</span>
+          </figure>
+        </div>
+
+        <div class="carousel-nav">
+          <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Tratamento anterior">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+          <button class="carousel-arrow" type="button" data-carousel-next aria-label="Próximo tratamento">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </button>
+        </div>
+
+        <div class="treatment-grid" data-carousel>
           <article class="treatment-card">
-            <span class="card-number">01</span>
+            <picture>
+              <source srcset="assets/treatments/treatment-01.webp" type="image/webp" />
+              <img src="assets/treatments/treatment-01.jpg" width="760" height="570" alt="Limpeza de pele profunda em atendimento com a Laura Anjos" loading="lazy" decoding="async" />
+            </picture>
             <h3>Limpeza de pele profunda</h3>
             <p>Higienização, extração criteriosa e finalização calmante.</p>
+            <a class="card-link" href="#contato">Saber mais<span aria-hidden="true">→</span></a>
           </article>
           <article class="treatment-card">
-            <span class="card-number">02</span>
+            <picture>
+              <source srcset="assets/treatments/treatment-02.webp" type="image/webp" />
+              <img src="assets/treatments/treatment-02.jpg" width="760" height="570" alt="Avaliação facial antes do peeling personalizado" loading="lazy" decoding="async" />
+            </picture>
             <h3>Peeling personalizado</h3>
             <p>Renovação superficial indicada após avaliação da pele.</p>
+            <a class="card-link" href="#contato">Saber mais<span aria-hidden="true">→</span></a>
           </article>
           <article class="treatment-card">
-            <span class="card-number">03</span>
+            <picture>
+              <source srcset="assets/treatments/treatment-03.webp" type="image/webp" />
+              <img src="assets/treatments/treatment-03.jpg" width="760" height="570" alt="Cuidado facial para acne e oleosidade" loading="lazy" decoding="async" />
+            </picture>
             <h3>Acne e oleosidade</h3>
             <p>Cuidado estético para acne, poros e excesso de brilho.</p>
+            <a class="card-link" href="#contato">Saber mais<span aria-hidden="true">→</span></a>
           </article>
           <article class="treatment-card">
-            <span class="card-number">04</span>
+            <picture>
+              <source srcset="assets/treatments/treatment-04.webp" type="image/webp" />
+              <img src="assets/treatments/treatment-04.jpg" width="760" height="570" alt="Protocolo para manchas e textura da pele" loading="lazy" decoding="async" />
+            </picture>
             <h3>Manchas e textura</h3>
             <p>Protocolos para uniformidade visual e toque mais refinado.</p>
+            <a class="card-link" href="#contato">Saber mais<span aria-hidden="true">→</span></a>
           </article>
           <article class="treatment-card">
-            <span class="card-number">05</span>
+            <picture>
+              <source srcset="assets/treatments/treatment-05.webp" type="image/webp" />
+              <img src="assets/treatments/treatment-05.jpg" width="760" height="570" alt="Revitalização facial em atendimento presencial" loading="lazy" decoding="async" />
+            </picture>
             <h3>Revitalização facial</h3>
             <p>Cuidado para viço, maciez e luminosidade.</p>
+            <a class="card-link" href="#contato">Saber mais<span aria-hidden="true">→</span></a>
           </article>
           <article class="treatment-card">
-            <span class="card-number">06</span>
+            <picture>
+              <source srcset="assets/treatments/treatment-06.webp" type="image/webp" />
+              <img src="assets/treatments/treatment-06.jpg" width="760" height="570" alt="Orientação de skincare para rotina em casa" loading="lazy" decoding="async" />
+            </picture>
             <h3>Skincare orientado</h3>
             <p>Rotina simples para manter os cuidados em casa.</p>
+            <a class="card-link" href="#contato">Saber mais<span aria-hidden="true">→</span></a>
           </article>
         </div>
       </section>
@@ -221,6 +274,15 @@
           <p>
             Laura Anjos é biomédica e conduz cada atendimento com avaliação facial, escuta e protocolos personalizados para a rotina da paciente.
           </p>
+
+          <ul class="why-list">
+            <li>Avaliação facial individual</li>
+            <li>Protocolos personalizados</li>
+            <li>Orientação para rotina em casa</li>
+            <li>Atendimento em dois espaços parceiros</li>
+          </ul>
+
+          <a class="button button-primary" href="#depoimentos">Ver depoimentos</a>
         </div>
 
         <div class="credentials">
@@ -248,41 +310,97 @@
           Comentários reais de clientes no Instagram.
         </p>
 
-        <div class="testimonial-grid">
-          <article class="testimonial-card">
-            <p>"Literalmente a melhor limpeza de pele que eu já fiz! Tenho a pele sensível e mesmo assim meu rosto fica lisinho e sem vermelhidão."</p>
-            <strong>@sohoffmann_</strong>
-            <span>Comentário no Instagram</span>
-          </article>
-          <article class="testimonial-card">
-            <p>"Show, eu super indico!"</p>
-            <strong>@quintinosilas</strong>
-            <span>Comentário no Instagram</span>
-          </article>
-          <article class="testimonial-card">
-            <p>"Na espera pra cuidar de nós... você é a melhor!"</p>
-            <strong>@jo958447</strong>
-            <span>Comentário no Instagram</span>
-          </article>
-          <article class="testimonial-card">
-            <p>"Excelente profissional!!!"</p>
-            <strong>@renataanjos_07</strong>
-            <span>Comentário no Instagram</span>
-          </article>
-          <article class="testimonial-card">
-            <p>"Demais"</p>
-            <strong>@sohoffmann_</strong>
-            <span>Comentário no Instagram</span>
-          </article>
-          <article class="testimonial-card">
-            <p>"A melhor do mundo"</p>
-            <strong>@hoffmanncore</strong>
-            <span>Comentário no Instagram</span>
-          </article>
+        <div class="testimonial-marquee">
+         <div class="testimonial-marquee-row">
+          <div class="testimonial-track">
+            <article class="testimonial-card">
+              <p>"Literalmente a melhor limpeza de pele que eu já fiz! Tenho a pele sensível e mesmo assim meu rosto fica lisinho e sem vermelhidão."</p>
+              <strong>@sohoffmann_</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Show, eu super indico!"</p>
+              <strong>@quintinosilas</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Na espera pra cuidar de nós... você é a melhor!"</p>
+              <strong>@jo958447</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Excelente profissional!!!"</p>
+              <strong>@renataanjos_07</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Demais"</p>
+              <strong>@sohoffmann_</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"A melhor do mundo"</p>
+              <strong>@hoffmanncore</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+          </div>
+          <div class="testimonial-track" aria-hidden="true">
+            <article class="testimonial-card">
+              <p>"Literalmente a melhor limpeza de pele que eu já fiz! Tenho a pele sensível e mesmo assim meu rosto fica lisinho e sem vermelhidão."</p>
+              <strong>@sohoffmann_</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Show, eu super indico!"</p>
+              <strong>@quintinosilas</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Na espera pra cuidar de nós... você é a melhor!"</p>
+              <strong>@jo958447</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Excelente profissional!!!"</p>
+              <strong>@renataanjos_07</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"Demais"</p>
+              <strong>@sohoffmann_</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+            <article class="testimonial-card">
+              <p>"A melhor do mundo"</p>
+              <strong>@hoffmanncore</strong>
+              <span>Comentário no Instagram</span>
+            </article>
+          </div>
+         </div>
         </div>
       </section>
 
       <section class="location-section" id="localizacao">
+        <div class="location-media">
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps?q=Av.+J%C3%BAlio+Maria,+52,+Centro,+Angra+dos+Reis+-+RJ,+23900-502&output=embed"
+              title="Mapa de localização do Espaço dos Anjos, em Angra dos Reis"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <span class="location-map-tag">Espaço dos Anjos</span>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps?q=Av.+Vereador+Benedito+Adelino,+390,+Enseada,+Angra+dos+Reis+-+RJ,+23931-400&output=embed"
+              title="Mapa de localização do Jô Estúdio de Beleza, em Angra dos Reis"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <span class="location-map-tag">Jô Estúdio de Beleza</span>
+          </div>
+        </div>
         <div class="location-copy">
           <p class="eyebrow">Localização</p>
           <h2>Atendimento presencial em Angra dos Reis.</h2>
@@ -371,14 +489,53 @@
     </main>
 
     <footer class="site-footer">
-      <span class="footer-brand">
-        <picture>
-          <source srcset="assets/brand/laura-anjos-logo-gold-black.webp" type="image/webp" />
-          <img src="assets/brand/laura-anjos-logo-gold-black.png" width="1058" height="648" alt="Laura Anjos Estética Avançada" loading="lazy" decoding="async" />
-        </picture>
-        <span>Angra dos Reis</span>
-      </span>
-      <a href="#inicio">Voltar ao topo</a>
+      <div class="footer-main">
+        <div class="footer-brand-col">
+          <picture>
+            <source srcset="assets/brand/laura-anjos-logo-white.webp" type="image/webp" />
+            <img src="assets/brand/laura-anjos-logo-white.png" width="1058" height="648" alt="Laura Anjos Estética Avançada" loading="lazy" decoding="async" />
+          </picture>
+          <p>Biomédica em Angra dos Reis - RJ, com foco em gerenciamento cutâneo personalizado.</p>
+        </div>
+
+        <div class="footer-col">
+          <strong>Contato</strong>
+          <a data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis.">(24) 99251-7752</a>
+          <a href="https://www.instagram.com/biomedicalauraanjos/" target="_blank" rel="noopener">@biomedicalauraanjos</a>
+        </div>
+
+        <div class="footer-col">
+          <strong>Localização</strong>
+          <span>Espaço dos Anjos - Centro</span>
+          <span>Jô Estúdio de Beleza - Enseada</span>
+        </div>
+
+        <div class="footer-col">
+          <strong>Navegação</strong>
+          <a href="#tratamentos">Tratamentos</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#duvidas">Dúvidas</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-col">
+          <strong>Social</strong>
+          <div class="footer-social">
+            <a data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis." aria-label="WhatsApp" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M12.04 3.2a8.72 8.72 0 0 0-7.44 13.28l-1.05 3.85 3.95-1.03a8.69 8.69 0 0 0 4.53 1.27h.01a8.69 8.69 0 0 0 8.7-8.68A8.72 8.72 0 0 0 12.04 3.2Zm5.11 12.48c-.22.62-1.28 1.18-1.78 1.26-.46.07-1.04.1-1.68-.1-.39-.12-.89-.29-1.53-.56-2.7-1.16-4.45-3.86-4.59-4.04-.13-.18-1.09-1.45-1.09-2.77 0-1.32.69-1.97.93-2.24.24-.27.53-.34.71-.34h.51c.16 0 .39-.06.61.47.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.13.29-.27.44-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.69 1.13 1.48 1.83 1.01.9 1.86 1.18 2.13 1.32.27.13.43.11.59-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.61-.13.24.09 1.56.74 1.83.87.27.13.44.2.51.31.07.11.07.64-.16 1.26Z" /></svg>
+            </a>
+            <a href="https://www.instagram.com/biomedicalauraanjos/" aria-label="Instagram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M12 2.2c2.7 0 3 0 4.1.06 1.05.05 1.62.22 2 .37.5.2.86.42 1.24.8.38.38.6.74.8 1.24.15.38.32.95.37 2 .06 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.05 1.05-.22 1.62-.37 2-.2.5-.42.86-.8 1.24-.38.38-.74.6-1.24.8-.38.15-.95.32-2 .37-1.1.06-1.4.06-4.1.06s-3 0-4.1-.06c-1.05-.05-1.62-.22-2-.37a3.4 3.4 0 0 1-1.24-.8 3.4 3.4 0 0 1-.8-1.24c-.15-.38-.32-.95-.37-2C2.2 15 2.2 14.7 2.2 12s0-3 .06-4.1c.05-1.05.22-1.62.37-2 .2-.5.42-.86.8-1.24.38-.38.74-.6 1.24-.8.38-.15.95-.32 2-.37C7.8 2.2 8.1 2.2 12 2.2Zm0 1.6c-2.65 0-2.96 0-4.01.06-.9.04-1.38.19-1.71.31-.43.17-.73.36-1.05.68-.32.32-.51.62-.68 1.05-.12.33-.27.81-.31 1.7-.06 1.06-.06 1.37-.06 4.02s0 2.96.06 4.02c.04.9.19 1.38.31 1.71.17.43.36.73.68 1.05.32.32.62.51 1.05.68.33.12.81.27 1.7.31 1.06.06 1.37.06 4.02.06s2.96 0 4.02-.06c.9-.04 1.38-.19 1.71-.31.43-.17.73-.36 1.05-.68.32-.32.51-.62.68-1.05.12-.33.27-.81.31-1.7.06-1.06.06-1.37.06-4.02s0-2.96-.06-4.02c-.04-.9-.19-1.38-.31-1.71a2.8 2.8 0 0 0-.68-1.05 2.8 2.8 0 0 0-1.05-.68c-.33-.12-.81-.27-1.7-.31-1.06-.06-1.37-.06-4.02-.06ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8Zm5.2-1.8a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Laura Anjos. Todos os direitos reservados.</span>
+        <a href="#inicio">Voltar ao topo</a>
+      </div>
     </footer>
 
     <a

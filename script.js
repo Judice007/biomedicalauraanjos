@@ -44,7 +44,7 @@ function syncFloatingWhatsApp() {
 
 function setupScrollReveal() {
   const targets = document.querySelectorAll(
-    ".signal-item, .section-heading, .section-lead, .treatment-card, .method-copy, .step, .about-media, .about-panel, .credentials > div, .testimonial-card, .location-copy, .map-placeholder, .faq-list details, .contact-copy, .contact-panel"
+    ".signal-item, .section-heading, .section-lead, .treatment-card, .method-copy, .step, .about-media, .about-panel, .credentials > div, .testimonial-card, .location-copy, .location-media, .map-placeholder, .faq-list details, .contact-copy, .contact-panel"
   );
 
   if (!targets.length) {
@@ -93,7 +93,27 @@ nav.addEventListener("click", (event) => {
   }
 });
 
+function setupCarousel() {
+  const track = document.querySelector("[data-carousel]");
+  const prevBtn = document.querySelector("[data-carousel-prev]");
+  const nextBtn = document.querySelector("[data-carousel-next]");
+
+  if (!track || !prevBtn || !nextBtn) {
+    return;
+  }
+
+  const scrollByCard = (direction) => {
+    const card = track.querySelector(".treatment-card");
+    const distance = card ? card.getBoundingClientRect().width + 20 : 320;
+    track.scrollBy({ left: distance * direction, behavior: "smooth" });
+  };
+
+  prevBtn.addEventListener("click", () => scrollByCard(-1));
+  nextBtn.addEventListener("click", () => scrollByCard(1));
+}
+
 syncHeader();
 configureWhatsApp();
 syncFloatingWhatsApp();
 setupScrollReveal();
+setupCarousel();
