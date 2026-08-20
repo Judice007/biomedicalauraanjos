@@ -7,7 +7,7 @@
       name="description"
       content="Laura Anjos, biomédica em Angra dos Reis, com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings."
     />
-    <meta name="theme-color" content="#181818" />
+    <meta name="theme-color" content="#3d1810" />
     <meta name="robots" content="index, follow" />
     <title>Laura Anjos | Biomédica em Angra dos Reis</title>
 
@@ -34,7 +34,9 @@
     <meta name="twitter:image" content="assets/hero-facial-care.jpg" />
 
     <link rel="preload" as="image" href="assets/hero-facial-care.webp" imagesrcset="assets/hero-facial-care.webp" type="image/webp" fetchpriority="high" />
-    <link rel="stylesheet" href="styles.css?v=organic-soft-forms-2" />
+    <link rel="preload" as="font" href="assets/fonts/fraunces-400.woff2" type="font/woff2" crossorigin />
+    <link rel="preload" as="font" href="assets/fonts/inter-400.woff2" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css?v=editorial-terracota-1" />
 
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"MedicalBusiness","name":"Laura Anjos | Espaço dos Anjos","description":"Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.","telephone":"+5524992517752","areaServed":"Angra dos Reis - RJ","address":{"@type":"PostalAddress","streetAddress":"Av. Júlio Maria, 52, sala 101 - Centro","addressLocality":"Angra dos Reis","addressRegion":"RJ","postalCode":"23900-502","addressCountry":"BR"},"sameAs":["https://www.instagram.com/biomedicalauraanjos/"]},{"@type":"MedicalBusiness","name":"Laura Anjos | Jô Estúdio de Beleza","description":"Biomédica com foco em gerenciamento cutâneo personalizado, avaliação facial, limpeza de pele e peelings.","telephone":"+5524992517752","areaServed":"Angra dos Reis - RJ","address":{"@type":"PostalAddress","streetAddress":"Av. Vereador Benedito Adelino, 390 - Encruzo da Enseada","addressLocality":"Angra dos Reis","addressRegion":"RJ","postalCode":"23931-400","addressCountry":"BR"},"sameAs":["https://www.instagram.com/biomedicalauraanjos/"]}]}</script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como sei qual tratamento é ideal para minha pele?","acceptedAnswer":{"@type":"Answer","text":"O primeiro passo é a avaliação facial. Depois dela, Laura indica o protocolo mais adequado."}},{"@type":"Question","name":"A limpeza de pele dói?","acceptedAnswer":{"@type":"Answer","text":"Pode haver leve desconforto na extração, sempre respeitando a sensibilidade da pele."}},{"@type":"Question","name":"Quanto tempo dura o atendimento?","acceptedAnswer":{"@type":"Answer","text":"Varia conforme o protocolo indicado na avaliação. Laura informa o tempo estimado antes de iniciar a sessão."}}]}</script>
@@ -77,53 +79,48 @@
 
     <main>
       <section class="hero" id="inicio" aria-label="Início">
-        <div class="hero-content">
-          <picture>
-            <source srcset="assets/brand/laura-anjos-logo-gold-black.webp" type="image/webp" />
-            <img class="hero-logo" src="assets/brand/laura-anjos-logo-gold-black.png" width="1058" height="648" alt="Laura Anjos Estética Avançada" decoding="async" />
-          </picture>
-          <p class="eyebrow">Laura Anjos | Biomédica</p>
-          <h1>Cuidado de pele personalizado em Angra dos Reis.</h1>
-          <p class="hero-copy">
-            Limpeza de pele, avaliação facial e peelings para textura, luminosidade e equilíbrio da pele.
-          </p>
-          <p class="hero-location">Atendimento exclusivo em Angra dos Reis - RJ</p>
-          <div class="hero-actions">
-            <a class="button button-primary" data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis." target="_blank" rel="noopener">Agendar avaliação</a>
-            <a class="button button-secondary" href="#tratamentos">Ver tratamentos</a>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Laura Anjos · Biomédica</p>
+            <h1>Cuidado de pele personalizado em Angra dos Reis.</h1>
+            <p class="hero-copy">
+              Limpeza de pele, avaliação facial e peelings para textura, luminosidade e equilíbrio da pele.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" data-whatsapp-link href="https://wa.me/5524992517752?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20facial%20em%20Angra%20dos%20Reis." target="_blank" rel="noopener">Agendar avaliação</a>
+              <a class="button button-secondary" href="#tratamentos">Ver tratamentos</a>
+            </div>
+            <dl class="hero-stats" aria-label="Destaques do atendimento">
+              <div>
+                <dt>Protocolo</dt>
+                <dd>Avaliação individual</dd>
+              </div>
+              <div>
+                <dt>Local</dt>
+                <dd>Angra dos Reis</dd>
+              </div>
+              <div>
+                <dt>Rotina</dt>
+                <dd>Orientada em casa</dd>
+              </div>
+            </dl>
           </div>
-          <div class="hero-side-grid" aria-label="Destaques do atendimento">
-            <article class="hero-feature-card">
-              <span>Protocolo</span>
-              <strong>Avaliação individual</strong>
-              <p>O cuidado começa entendendo a pele.</p>
-            </article>
-            <article class="hero-feature-card">
-              <span>Local</span>
-              <strong>Angra dos Reis</strong>
-              <p>Atendimento presencial e personalizado.</p>
-            </article>
-            <article class="hero-feature-card hero-feature-card-dark">
-              <span>Rotina</span>
-              <strong>Rotina orientada em casa</strong>
-              <p>Passos claros para manter o cuidado depois da sessão.</p>
-            </article>
+          <div class="hero-photo">
+            <picture>
+              <source srcset="assets/hero-facial-care.webp" type="image/webp" />
+              <img
+                class="hero-image"
+                src="assets/hero-facial-care.jpg"
+                width="1400"
+                height="709"
+                alt="Laura Anjos realizando atendimento estético ao ar livre em evento, com o banner do Espaço dos Anjos ao fundo"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
-        <div class="hero-photo">
-          <picture>
-            <source srcset="assets/hero-facial-care.webp" type="image/webp" />
-            <img
-              class="hero-image"
-              src="assets/hero-facial-care.jpg"
-              width="1400"
-              height="709"
-              alt="Laura Anjos realizando atendimento estético ao ar livre em evento, com o banner do Espaço dos Anjos ao fundo"
-              fetchpriority="high"
-              decoding="async"
-            />
-          </picture>
-        </div>
+        <p class="hero-location">Atendimento exclusivo em Angra dos Reis - RJ</p>
       </section>
 
       <section class="section section-intro" id="tratamentos">
